@@ -3,7 +3,7 @@ WITH airports_reorder AS (
         country,                 -- 1st
         region,                  -- 2nd
         faa,
-        name        AS airport_name,   
+        name           
         city,
         lat,
         lon,
