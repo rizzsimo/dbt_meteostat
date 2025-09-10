@@ -17,4 +17,4 @@ WITH airports_reorder AS (
 )
 
 SELECT *
-FROM airports_reorder;
+FROM airports_reorder
