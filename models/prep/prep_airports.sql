@@ -1,11 +1,9 @@
 WITH airports_reorder AS (
     SELECT
-        country,
-        region,
-        city,
-        state,
+        country,         -- 1st
+        region,          -- 2nd
         faa,
-        name,
+        city,
         lat,
         lon,
         alt,
@@ -14,5 +12,5 @@ WITH airports_reorder AS (
     FROM {{ ref('staging_airports') }}
 )
 SELECT *
-FROM airports_reorder
+FROM airports_reorder;
 
